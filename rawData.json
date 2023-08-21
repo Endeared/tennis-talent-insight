@@ -145,54 +145,154 @@
         ],
         "data_slam": [
             {
+                "age": "17",
+                "year": 1969,
+                "wins": 0,
+                "finals": 0
+            },
+            {
+                "age": "18",
+                "year": 1970,
+                "wins": 0,
+                "finals": 0
+            },
+            {
+                "age": "19",
+                "year": 1971,
+                "wins": 0,
+                "finals": 0
+            },
+            {
+                "age": "20",
+                "year": 1972,
+                "wins": 0,
+                "finals": 0
+            },
+            {
                 "age": "21",
+                "year": 1973,
                 "wins": 3,
                 "finals": 3
             },
             {
                 "age": "22",
+                "year": 1974,
                 "wins": 3,
                 "finals": 6
             },
             {
                 "age": "23",
+                "year": 1975,
                 "wins": 4,
                 "finals": 7
             },
             {
                 "age": "24",
+                "year": 1976,
                 "wins": 4,
                 "finals": 9
             },
             {
                 "age": "25",
+                "year": 1977,
                 "wins": 5,
                 "finals": 11
             },
             {
                 "age": "29",
+                "year": 1981,
                 "wins": 7,
                 "finals": 13
             },
             {
                 "age": "30",
+                "year": 1982,
                 "wins": 8,
                 "finals": 14
             },
             {
                 "age": "31",
+                "year": 1983,
                 "wins": 8,
                 "finals": 15
             },
             {
-                "age": "26",
-                "wins": 4,
-                "finals": 10
+                "age": "32",
+                "year": 1984,
+                "wins": 8,
+                "finals": 15
             },
             {
-                "age": "26",
-                "wins": 5,
-                "finals": 11
+                "age": "33",
+                "year": 1985,
+                "wins": 8,
+                "finals": 15
+            },
+            {
+                "age": "34",
+                "year": 1986,
+                "wins": 8,
+                "finals": 15
+            },
+            {
+                "age": "35",
+                "year": 1987,
+                "wins": 8,
+                "finals": 15
+            },
+            {
+                "age": "36",
+                "year": 1988,
+                "wins": 8,
+                "finals": 15
+            },
+            {
+                "age": "37",
+                "year": 1989,
+                "wins": 8,
+                "finals": 15
+            },
+            {
+                "age": "38",
+                "year": 1990,
+                "wins": 8,
+                "finals": 15
+            },
+            {
+                "age": "39",
+                "year": 1991,
+                "wins": 8,
+                "finals": 15
+            },
+            {
+                "age": "40",
+                "year": 1992,
+                "wins": 8,
+                "finals": 15
+            },
+            {
+                "age": "41",
+                "year": 1993,
+                "wins": 8,
+                "finals": 15
+            },
+            {
+                "age": "42",
+                "year": 1994,
+                "wins": 8,
+                "finals": 15
+            },
+            {
+                "age": "43",
+                "year": 1995,
+                "wins": 8,
+                "finals": 15
+            },
+            {
+                "age": "44",
+                "year": 1996,
+                "wins": 8,
+                "finals": 15
             }
         ]
     },
@@ -287,47 +387,134 @@
         ],
         "data_slam": [
             {
+                "age": "15",
+                "year": 1971,
+                "wins": 0,
+                "finals": 0
+            },
+            {
+                "age": "16",
+                "year": 1972,
+                "wins": 0,
+                "finals": 0
+            },
+            {
                 "age": "17",
+                "year": 1973,
                 "wins": 1,
                 "finals": 1
             },
             {
                 "age": "18",
-                "wins": 2,
-                "finals": 2
-            },
-            {
-                "age": "19",
+                "year": 1974,
                 "wins": 2,
                 "finals": 2
             },
             {
                 "age": "20",
+                "year": 1976,
                 "wins": 3,
                 "finals": 4
             },
             {
                 "age": "21",
+                "year": 1977,
                 "wins": 5,
                 "finals": 6
             },
             {
                 "age": "22",
+                "year": 1978,
                 "wins": 7,
                 "finals": 9
             },
             {
                 "age": "23",
+                "year": 1979,
                 "wins": 9,
                 "finals": 11
             },
             {
                 "age": "24",
+                "year": 1980,
                 "wins": 11,
                 "finals": 14
             },
             {
                 "age": "25",
+                "year": 1981,
+                "wins": 11,
+                "finals": 16
+            },
+            {
+                "age": "26",
+                "year": 1982,
+                "wins": 11,
+                "finals": 16
+            },
+            {
+                "age": "27",
+                "year": 1983,
+                "wins": 11,
+                "finals": 16
+            },
+            {
+                "age": "28",
+                "year": 1984,
+                "wins": 11,
+                "finals": 16
+            },
+            {
+                "age": "29",
+                "year": 1985,
+                "wins": 11,
+                "finals": 16
+            },
+            {
+                "age": "30",
+                "year": 1986,
+                "wins": 11,
+                "finals": 16
+            },
+            {
+                "age": "31",
+                "year": 1987,
+                "wins": 11,
+                "finals": 16
+            },
+            {
+                "age": "32",
+                "year": 1988,
+                "wins": 11,
+                "finals": 16
+            },
+            {
+                "age": "33",
+                "year": 1989,
+                "wins": 11,
+                "finals": 16
+            },
+            {
+                "age": "34",
+                "year": 1990,
+                "wins": 11,
+                "finals": 16
+            },
+            {
+                "age": "35",
+                "year": 1991,
+                "wins": 11,
+                "finals": 16
+            },
+            {
+                "age": "36",
+                "year": 1992,
+                "wins": 11,
+                "finals": 16
+            },
+            {
+                "age": "37",
+                "year": 1993,
                 "wins": 11,
                 "finals": 16
             }
@@ -429,37 +616,116 @@
         ],
         "data_slam": [
             {
+                "age": "17",
+                "year": 1976,
+                "wins": 0,
+                "finals": 0
+            },
+            {
+                "age": "18",
+                "year": 1977,
+                "wins": 0,
+                "finals": 0
+            },
+            {
+                "age": "19",
+                "year": 1978,
+                "wins": 0,
+                "finals": 0
+            },
+            {
                 "age": "20",
+                "year": 1979,
                 "wins": 1,
                 "finals": 1
             },
             {
                 "age": "21",
+                "year": 1980,
                 "wins": 2,
                 "finals": 3
             },
             {
                 "age": "22",
+                "year": 1981,
                 "wins": 4,
                 "finals": 5
             },
             {
                 "age": "23",
+                "year": 1982,
                 "wins": 4,
                 "finals": 6
             },
             {
                 "age": "24",
+                "year": 1983,
                 "wins": 5,
                 "finals": 7
             },
             {
                 "age": "25",
+                "year": 1984,
                 "wins": 7,
                 "finals": 10
             },
             {
                 "age": "26",
+                "year": 1985,
+                "wins": 7,
+                "finals": 11
+            },
+            {
+                "age": "27",
+                "year": 1986,
+                "wins": 7,
+                "finals": 11
+            },
+            {
+                "age": "28",
+                "year": 1987,
+                "wins": 7,
+                "finals": 11
+            },
+            {
+                "age": "29",
+                "year": 1988,
+                "wins": 7,
+                "finals": 11
+            },
+            {
+                "age": "30",
+                "year": 1989,
+                "wins": 7,
+                "finals": 11
+            },
+            {
+                "age": "31",
+                "year": 1990,
+                "wins": 7,
+                "finals": 11
+            },
+            {
+                "age": "32",
+                "year": 1991,
+                "wins": 7,
+                "finals": 11
+            },
+            {
+                "age": "33",
+                "year": 1992,
+                "wins": 7,
+                "finals": 11
+            },
+            {
+                "age": "34",
+                "year": 1993,
+                "wins": 7,
+                "finals": 11
+            },
+            {
+                "age": "35",
+                "year": 1994,
                 "wins": 7,
                 "finals": 11
             }
@@ -556,52 +822,104 @@
         ],
         "data_slam": [
             {
+                "age": "18",
+                "year": 1978,
+                "wins": 0,
+                "finals": 0
+            },
+            {
+                "age": "19",
+                "year": 1979,
+                "wins": 0,
+                "finals": 0
+            },
+            {
+                "age": "20",
+                "year": 1980,
+                "wins": 0,
+                "finals": 0
+            },
+            {
                 "age": "21",
+                "year": 1981,
                 "wins": 0,
                 "finals": 1
             },
             {
                 "age": "22",
+                "year": 1982,
                 "wins": 0,
                 "finals": 2
             },
             {
                 "age": "23",
+                "year": 1983,
                 "wins": 0,
                 "finals": 4
             },
             {
                 "age": "24",
+                "year": 1984,
                 "wins": 1,
                 "finals": 6
             },
             {
                 "age": "25",
+                "year": 1985,
                 "wins": 2,
                 "finals": 8
             },
             {
                 "age": "26",
+                "year": 1986,
                 "wins": 4,
                 "finals": 11
             },
             {
                 "age": "27",
+                "year": 1987,
                 "wins": 6,
                 "finals": 14
             },
             {
                 "age": "28",
+                "year": 1988,
                 "wins": 7,
                 "finals": 16
             },
             {
                 "age": "29",
+                "year": 1989,
                 "wins": 8,
                 "finals": 18
             },
             {
                 "age": "30",
+                "year": 1990,
+                "wins": 8,
+                "finals": 19
+            },
+            {
+                "age": "31",
+                "year": 1991,
+                "wins": 8,
+                "finals": 19
+            },
+            {
+                "age": "32",
+                "year": 1992,
+                "wins": 8,
+                "finals": 19
+            },
+            {
+                "age": "33",
+                "year": 1993,
+                "wins": 8,
+                "finals": 19
+            },
+            {
+                "age": "34",
+                "year": 1994,
                 "wins": 8,
                 "finals": 19
             }
@@ -693,42 +1011,104 @@
         ],
         "data_slam": [
             {
+                "age": "16",
+                "year": 1980,
+                "wins": 0,
+                "finals": 0
+            },
+            {
                 "age": "17",
+                "year": 1981,
                 "wins": 1,
                 "finals": 1
             },
             {
                 "age": "18",
+                "year": 1982,
                 "wins": 1,
                 "finals": 2
             },
             {
                 "age": "19",
+                "year": 1983,
                 "wins": 2,
                 "finals": 3
             },
             {
                 "age": "20",
+                "year": 1984,
                 "wins": 4,
                 "finals": 5
             },
             {
                 "age": "21",
+                "year": 1985,
                 "wins": 4,
                 "finals": 6
             },
             {
                 "age": "22",
+                "year": 1986,
                 "wins": 4,
                 "finals": 7
             },
             {
                 "age": "23",
+                "year": 1987,
                 "wins": 6,
                 "finals": 10
             },
             {
                 "age": "24",
+                "year": 1988,
+                "wins": 7,
+                "finals": 11
+            },
+            {
+                "age": "25",
+                "year": 1989,
+                "wins": 7,
+                "finals": 11
+            },
+            {
+                "age": "26",
+                "year": 1990,
+                "wins": 7,
+                "finals": 11
+            },
+            {
+                "age": "27",
+                "year": 1991,
+                "wins": 7,
+                "finals": 11
+            },
+            {
+                "age": "28",
+                "year": 1992,
+                "wins": 7,
+                "finals": 11
+            },
+            {
+                "age": "29",
+                "year": 1993,
+                "wins": 7,
+                "finals": 11
+            },
+            {
+                "age": "30",
+                "year": 1994,
+                "wins": 7,
+                "finals": 11
+            },
+            {
+                "age": "31",
+                "year": 1995,
+                "wins": 7,
+                "finals": 11
+            },
+            {
+                "age": "32",
+                "year": 1996,
                 "wins": 7,
                 "finals": 11
             }
@@ -815,42 +1195,86 @@
         ],
         "data_slam": [
             {
+                "age": "16",
+                "year": 1982,
+                "wins": 0,
+                "finals": 0
+            },
+            {
+                "age": "17",
+                "year": 1983,
+                "wins": 0,
+                "finals": 0
+            },
+            {
+                "age": "18",
+                "year": 1984,
+                "wins": 0,
+                "finals": 0
+            },
+            {
                 "age": "19",
+                "year": 1985,
                 "wins": 1,
                 "finals": 1
             },
             {
                 "age": "20",
-                "wins": 2,
-                "finals": 2
-            },
-            {
-                "age": "21",
+                "year": 1986,
                 "wins": 2,
                 "finals": 2
             },
             {
                 "age": "22",
+                "year": 1988,
                 "wins": 3,
                 "finals": 3
             },
             {
                 "age": "23",
+                "year": 1989,
                 "wins": 3,
                 "finals": 6
             },
             {
                 "age": "24",
+                "year": 1990,
                 "wins": 4,
                 "finals": 7
             },
             {
                 "age": "25",
+                "year": 1991,
                 "wins": 5,
                 "finals": 9
             },
             {
                 "age": "26",
+                "year": 1992,
+                "wins": 6,
+                "finals": 11
+            },
+            {
+                "age": "27",
+                "year": 1993,
+                "wins": 6,
+                "finals": 11
+            },
+            {
+                "age": "28",
+                "year": 1994,
+                "wins": 6,
+                "finals": 11
+            },
+            {
+                "age": "29",
+                "year": 1995,
+                "wins": 6,
+                "finals": 11
+            },
+            {
+                "age": "30",
+                "year": 1996,
                 "wins": 6,
                 "finals": 11
             }
@@ -947,59 +1371,82 @@
         ],
         "data_slam": [
             {
+                "age": "16",
+                "year": 1983,
+                "wins": 0,
+                "finals": 0
+            },
+            {
                 "age": "17",
+                "year": 1984,
                 "wins": 1,
                 "finals": 1
             },
             {
                 "age": "18",
-                "wins": 2,
-                "finals": 2
-            },
-            {
-                "age": "19",
+                "year": 1985,
                 "wins": 2,
                 "finals": 2
             },
             {
                 "age": "20",
+                "year": 1987,
                 "wins": 2,
                 "finals": 3
             },
             {
                 "age": "21",
+                "year": 1988,
                 "wins": 4,
                 "finals": 5
             },
             {
                 "age": "22",
+                "year": 1989,
                 "wins": 4,
                 "finals": 6
             },
             {
                 "age": "23",
+                "year": 1990,
                 "wins": 5,
                 "finals": 8
             },
             {
                 "age": "27",
+                "year": 1994,
                 "wins": 5,
                 "finals": 9
             },
             {
-                "age": "24",
-                "wins": 5,
-                "finals": 7
-            },
-            {
                 "age": "28",
+                "year": 1995,
                 "wins": 6,
                 "finals": 10
             },
             {
-                "age": "24",
-                "wins": 5,
-                "finals": 8
+                "age": "29",
+                "year": 1996,
+                "wins": 6,
+                "finals": 10
+            },
+            {
+                "age": "30",
+                "year": 1997,
+                "wins": 6,
+                "finals": 10
+            },
+            {
+                "age": "31",
+                "year": 1998,
+                "wins": 6,
+                "finals": 10
+            },
+            {
+                "age": "32",
+                "year": 1999,
+                "wins": 6,
+                "finals": 10
             }
         ]
     },
@@ -1084,67 +1531,86 @@
         ],
         "data_slam": [
             {
-                "age": "19",
-                "wins": 1,
-                "finals": 1
+                "age": "17",
+                "year": 1988,
+                "wins": 0,
+                "finals": 0
             },
             {
-                "age": "20",
+                "age": "18",
+                "year": 1989,
+                "wins": 0,
+                "finals": 0
+            },
+            {
+                "age": "19",
+                "year": 1990,
                 "wins": 1,
                 "finals": 1
             },
             {
                 "age": "21",
+                "year": 1992,
                 "wins": 2,
                 "finals": 3
             },
             {
                 "age": "22",
+                "year": 1993,
                 "wins": 5,
                 "finals": 6
             },
             {
                 "age": "23",
+                "year": 1994,
                 "wins": 6,
                 "finals": 8
             },
             {
                 "age": "24",
+                "year": 1995,
                 "wins": 7,
                 "finals": 9
             },
             {
                 "age": "25",
+                "year": 1996,
                 "wins": 9,
                 "finals": 11
             },
             {
                 "age": "26",
+                "year": 1997,
                 "wins": 10,
                 "finals": 12
             },
             {
                 "age": "27",
+                "year": 1998,
                 "wins": 11,
                 "finals": 13
             },
             {
                 "age": "28",
+                "year": 1999,
                 "wins": 12,
                 "finals": 14
             },
             {
                 "age": "29",
+                "year": 2000,
                 "wins": 12,
                 "finals": 15
             },
             {
                 "age": "30",
+                "year": 2001,
                 "wins": 12,
                 "finals": 16
             },
             {
                 "age": "31",
+                "year": 2002,
                 "wins": 13,
                 "finals": 17
             }
@@ -1261,74 +1727,88 @@
         ],
         "data_slam": [
             {
+                "age": "16",
+                "year": 1986,
+                "wins": 0,
+                "finals": 0
+            },
+            {
+                "age": "17",
+                "year": 1987,
+                "wins": 0,
+                "finals": 0
+            },
+            {
+                "age": "18",
+                "year": 1988,
+                "wins": 0,
+                "finals": 0
+            },
+            {
+                "age": "19",
+                "year": 1989,
+                "wins": 0,
+                "finals": 0
+            },
+            {
                 "age": "20",
+                "year": 1990,
                 "wins": 0,
                 "finals": 2
             },
             {
                 "age": "21",
+                "year": 1991,
                 "wins": 0,
                 "finals": 3
             },
             {
                 "age": "22",
+                "year": 1992,
                 "wins": 1,
                 "finals": 4
             },
             {
                 "age": "24",
+                "year": 1994,
                 "wins": 3,
                 "finals": 6
             },
             {
-                "age": "23",
-                "wins": 1,
-                "finals": 4
-            },
-            {
                 "age": "25",
+                "year": 1995,
                 "wins": 3,
                 "finals": 7
             },
             {
                 "age": "29",
+                "year": 1999,
                 "wins": 6,
                 "finals": 11
             },
             {
                 "age": "30",
+                "year": 2000,
                 "wins": 7,
                 "finals": 12
             },
             {
-                "age": "26",
-                "wins": 3,
-                "finals": 7
-            },
-            {
                 "age": "32",
+                "year": 2002,
                 "wins": 8,
                 "finals": 14
             },
             {
                 "age": "35",
+                "year": 2005,
                 "wins": 8,
                 "finals": 15
             },
             {
-                "age": "31",
-                "wins": 7,
-                "finals": 12
-            },
-            {
-                "age": "33",
-                "wins": 7,
-                "finals": 13
-            },
-            {
-                "age": "33",
+                "age": "36",
+                "year": 2006,
                 "wins": 8,
-                "finals": 14
+                "finals": 15
             }
         ]
     },
@@ -1458,82 +1938,140 @@
         ],
         "data_slam": [
             {
+                "age": "17",
+                "year": 1998,
+                "wins": 0,
+                "finals": 0
+            },
+            {
+                "age": "18",
+                "year": 1999,
+                "wins": 0,
+                "finals": 0
+            },
+            {
+                "age": "19",
+                "year": 2000,
+                "wins": 0,
+                "finals": 0
+            },
+            {
+                "age": "20",
+                "year": 2001,
+                "wins": 0,
+                "finals": 0
+            },
+            {
+                "age": "21",
+                "year": 2002,
+                "wins": 0,
+                "finals": 0
+            },
+            {
                 "age": "22",
+                "year": 2003,
                 "wins": 1,
                 "finals": 1
             },
             {
                 "age": "23",
+                "year": 2004,
                 "wins": 3,
                 "finals": 3
             },
             {
                 "age": "24",
+                "year": 2005,
                 "wins": 4,
                 "finals": 5
             },
             {
                 "age": "25",
+                "year": 2006,
                 "wins": 5,
                 "finals": 7
             },
             {
                 "age": "26",
+                "year": 2007,
                 "wins": 6,
                 "finals": 10
             },
             {
                 "age": "27",
+                "year": 2008,
                 "wins": 6,
                 "finals": 11
             },
             {
                 "age": "28",
+                "year": 2009,
                 "wins": 7,
                 "finals": 12
             },
             {
                 "age": "29",
+                "year": 2010,
                 "wins": 7,
                 "finals": 13
             },
             {
                 "age": "30",
+                "year": 2011,
                 "wins": 8,
                 "finals": 14
             },
             {
                 "age": "32",
+                "year": 2013,
                 "wins": 8,
                 "finals": 15
             },
             {
                 "age": "33",
+                "year": 2014,
                 "wins": 8,
                 "finals": 16
             },
             {
                 "age": "34",
+                "year": 2015,
                 "wins": 8,
                 "finals": 17
             },
             {
                 "age": "35",
+                "year": 2016,
                 "wins": 9,
                 "finals": 18
             },
             {
                 "age": "36",
+                "year": 2017,
                 "wins": 10,
                 "finals": 19
             },
             {
-                "age": "31",
-                "wins": 8,
-                "finals": 14
+                "age": "37",
+                "year": 2018,
+                "wins": 10,
+                "finals": 20
             },
             {
-                "age": "37",
+                "age": "38",
+                "year": 2019,
+                "wins": 10,
+                "finals": 20
+            },
+            {
+                "age": "39",
+                "year": 2020,
+                "wins": 10,
+                "finals": 20
+            },
+            {
+                "age": "40",
+                "year": 2021,
                 "wins": 10,
                 "finals": 20
             }
@@ -1655,99 +2193,124 @@
         ],
         "data_slam": [
             {
+                "age": "16",
+                "year": 2002,
+                "wins": 0,
+                "finals": 0
+            },
+            {
+                "age": "17",
+                "year": 2003,
+                "wins": 0,
+                "finals": 0
+            },
+            {
                 "age": "18",
+                "year": 2004,
                 "wins": 1,
                 "finals": 1
             },
             {
                 "age": "19",
+                "year": 2005,
                 "wins": 2,
                 "finals": 2
             },
             {
                 "age": "20",
+                "year": 2006,
                 "wins": 3,
                 "finals": 4
             },
             {
                 "age": "21",
+                "year": 2007,
                 "wins": 4,
                 "finals": 6
             },
             {
                 "age": "22",
+                "year": 2008,
                 "wins": 6,
                 "finals": 8
             },
             {
                 "age": "23",
+                "year": 2009,
                 "wins": 7,
                 "finals": 9
             },
             {
                 "age": "24",
+                "year": 2010,
                 "wins": 10,
                 "finals": 12
             },
             {
                 "age": "25",
+                "year": 2011,
                 "wins": 11,
                 "finals": 16
             },
             {
                 "age": "26",
+                "year": 2012,
                 "wins": 12,
                 "finals": 17
             },
             {
                 "age": "27",
+                "year": 2013,
                 "wins": 14,
                 "finals": 20
             },
             {
                 "age": "30",
+                "year": 2016,
                 "wins": 15,
                 "finals": 22
             },
             {
                 "age": "31",
+                "year": 2017,
                 "wins": 17,
                 "finals": 24
             },
             {
                 "age": "32",
+                "year": 2018,
                 "wins": 18,
                 "finals": 26
             },
             {
                 "age": "33",
+                "year": 2019,
                 "wins": 19,
                 "finals": 27
             },
             {
                 "age": "34",
+                "year": 2020,
                 "wins": 20,
                 "finals": 28
             },
             {
                 "age": "35",
+                "year": 2021,
                 "wins": 22,
                 "finals": 30
             },
             {
-                "age": "28",
-                "wins": 13,
-                "finals": 18
+                "age": "36",
+                "year": 2022,
+                "wins": 22,
+                "finals": 30
             },
             {
-                "age": "28",
-                "wins": 13,
-                "finals": 19
-            },
-            {
-                "age": "28",
-                "wins": 14,
-                "finals": 20
+                "age": "37",
+                "year": 2023,
+                "wins": 22,
+                "finals": 30
             }
         ]
     },
@@ -1857,94 +2420,106 @@
         ],
         "data_slam": [
             {
+                "age": "17",
+                "year": 2004,
+                "wins": 0,
+                "finals": 0
+            },
+            {
+                "age": "18",
+                "year": 2005,
+                "wins": 0,
+                "finals": 0
+            },
+            {
+                "age": "19",
+                "year": 2006,
+                "wins": 0,
+                "finals": 0
+            },
+            {
                 "age": "20",
+                "year": 2007,
                 "wins": 1,
                 "finals": 2
             },
             {
-                "age": "21",
-                "wins": 0,
-                "finals": 1
-            },
-            {
                 "age": "23",
+                "year": 2010,
                 "wins": 2,
                 "finals": 4
             },
             {
-                "age": "21",
-                "wins": 1,
-                "finals": 2
-            },
-            {
                 "age": "24",
+                "year": 2011,
                 "wins": 5,
                 "finals": 7
             },
             {
                 "age": "25",
+                "year": 2012,
                 "wins": 6,
                 "finals": 10
             },
             {
                 "age": "26",
+                "year": 2013,
                 "wins": 6,
                 "finals": 12
             },
             {
                 "age": "27",
+                "year": 2014,
                 "wins": 8,
                 "finals": 15
             },
             {
                 "age": "28",
+                "year": 2015,
                 "wins": 11,
                 "finals": 19
             },
             {
                 "age": "29",
+                "year": 2016,
                 "wins": 12,
                 "finals": 21
             },
             {
                 "age": "31",
+                "year": 2018,
                 "wins": 15,
                 "finals": 24
             },
             {
                 "age": "32",
+                "year": 2019,
                 "wins": 17,
                 "finals": 26
             },
             {
                 "age": "33",
+                "year": 2020,
                 "wins": 18,
                 "finals": 28
             },
             {
                 "age": "34",
+                "year": 2021,
                 "wins": 20,
                 "finals": 31
             },
             {
                 "age": "35",
+                "year": 2022,
                 "wins": 22,
                 "finals": 33
             },
             {
                 "age": "36",
+                "year": 2023,
                 "wins": 23,
                 "finals": 35
-            },
-            {
-                "age": "30",
-                "wins": 12,
-                "finals": 20
-            },
-            {
-                "age": "30",
-                "wins": 12,
-                "finals": 21
             }
         ]
     },
@@ -2049,47 +2624,110 @@
         ],
         "data_slam": [
             {
+                "age": "18",
+                "year": 2005,
+                "wins": 0,
+                "finals": 0
+            },
+            {
+                "age": "19",
+                "year": 2006,
+                "wins": 0,
+                "finals": 0
+            },
+            {
+                "age": "20",
+                "year": 2007,
+                "wins": 0,
+                "finals": 0
+            },
+            {
                 "age": "21",
+                "year": 2008,
                 "wins": 0,
                 "finals": 1
             },
             {
                 "age": "22",
+                "year": 2009,
                 "wins": 0,
                 "finals": 2
             },
             {
                 "age": "23",
-                "wins": 0,
-                "finals": 3
-            },
-            {
-                "age": "24",
+                "year": 2010,
                 "wins": 0,
                 "finals": 3
             },
             {
                 "age": "25",
+                "year": 2012,
                 "wins": 1,
                 "finals": 6
             },
             {
                 "age": "26",
+                "year": 2013,
                 "wins": 2,
                 "finals": 7
             },
             {
                 "age": "27",
+                "year": 2014,
                 "wins": 2,
                 "finals": 8
             },
             {
                 "age": "28",
+                "year": 2015,
                 "wins": 2,
                 "finals": 9
             },
             {
                 "age": "29",
+                "year": 2016,
+                "wins": 3,
+                "finals": 11
+            },
+            {
+                "age": "30",
+                "year": 2017,
+                "wins": 3,
+                "finals": 11
+            },
+            {
+                "age": "31",
+                "year": 2018,
+                "wins": 3,
+                "finals": 11
+            },
+            {
+                "age": "32",
+                "year": 2019,
+                "wins": 3,
+                "finals": 11
+            },
+            {
+                "age": "33",
+                "year": 2020,
+                "wins": 3,
+                "finals": 11
+            },
+            {
+                "age": "34",
+                "year": 2021,
+                "wins": 3,
+                "finals": 11
+            },
+            {
+                "age": "35",
+                "year": 2022,
+                "wins": 3,
+                "finals": 11
+            },
+            {
+                "age": "36",
+                "year": 2023,
                 "wins": 3,
                 "finals": 11
             }
@@ -2206,27 +2844,122 @@
         ],
         "data_slam": [
             {
-                "age": "28",
-                "wins": 1,
-                "finals": 1
+                "age": "18",
+                "year": 2003,
+                "wins": 0,
+                "finals": 0
             },
             {
-                "age": "29",
+                "age": "19",
+                "year": 2004,
+                "wins": 0,
+                "finals": 0
+            },
+            {
+                "age": "20",
+                "year": 2005,
+                "wins": 0,
+                "finals": 0
+            },
+            {
+                "age": "21",
+                "year": 2006,
+                "wins": 0,
+                "finals": 0
+            },
+            {
+                "age": "22",
+                "year": 2007,
+                "wins": 0,
+                "finals": 0
+            },
+            {
+                "age": "23",
+                "year": 2008,
+                "wins": 0,
+                "finals": 0
+            },
+            {
+                "age": "24",
+                "year": 2009,
+                "wins": 0,
+                "finals": 0
+            },
+            {
+                "age": "25",
+                "year": 2010,
+                "wins": 0,
+                "finals": 0
+            },
+            {
+                "age": "26",
+                "year": 2011,
+                "wins": 0,
+                "finals": 0
+            },
+            {
+                "age": "27",
+                "year": 2012,
+                "wins": 0,
+                "finals": 0
+            },
+            {
+                "age": "28",
+                "year": 2013,
                 "wins": 1,
                 "finals": 1
             },
             {
                 "age": "30",
+                "year": 2015,
                 "wins": 2,
                 "finals": 2
             },
             {
                 "age": "31",
+                "year": 2016,
                 "wins": 3,
                 "finals": 3
             },
             {
                 "age": "32",
+                "year": 2017,
+                "wins": 3,
+                "finals": 4
+            },
+            {
+                "age": "33",
+                "year": 2018,
+                "wins": 3,
+                "finals": 4
+            },
+            {
+                "age": "34",
+                "year": 2019,
+                "wins": 3,
+                "finals": 4
+            },
+            {
+                "age": "35",
+                "year": 2020,
+                "wins": 3,
+                "finals": 4
+            },
+            {
+                "age": "36",
+                "year": 2021,
+                "wins": 3,
+                "finals": 4
+            },
+            {
+                "age": "37",
+                "year": 2022,
+                "wins": 3,
+                "finals": 4
+            },
+            {
+                "age": "38",
+                "year": 2023,
                 "wins": 3,
                 "finals": 4
             }
@@ -2258,12 +2991,26 @@
         ],
         "data_slam": [
             {
+                "age": "17",
+                "year": 2020,
+                "wins": 0,
+                "finals": 0
+            },
+            {
+                "age": "18",
+                "year": 2021,
+                "wins": 0,
+                "finals": 0
+            },
+            {
                 "age": "19",
+                "year": 2022,
                 "wins": 1,
                 "finals": 1
             },
             {
                 "age": "20",
+                "year": 2023,
                 "wins": 2,
                 "finals": 2
             }
