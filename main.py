@@ -9,7 +9,7 @@ info = [
     {
         "name": "Pete Sampras",
         "dob": "12-Aug-1971"
-    }
+    },
 ]
 
 player_data = []
@@ -107,25 +107,39 @@ for player in info:
         }
         player_data[player_iterator]['data_slam'].append(my_object)
 
-    player_data_wl = player_data[player_iterator]['data_slam']
-    length_wl = len(player_data_wl)
-    lowest_age = player_data_wl[0]['age']
-    highest_age = player_data_wl[length_wl - 1]['age']
+    player_data_slam = player_data[player_iterator]['data_slam']
+    length_wl = len(player_data_slam)
+    lowest_age = player_data_slam[0]['age']
+    highest_age = player_data_slam[length_wl - 1]['age']
     all_ages = populate_range(int(lowest_age), int(highest_age) + 1)
-    all_ages_copy = all_ages.copy()
-    push_indexes = []
-
-    print(all_ages)
 
     for data_point in player_data[player_iterator]['data_slam']:
         this_age = data_point['age']
         if this_age in all_ages:
             all_ages.remove(this_age)
-        elif this_age not in all_ages:
-            push_indexes.append(player_data_wl.index(data_point))
 
-    print(push_indexes)
     print(all_ages)
+
+    treated_data_slam = []
+    ignore_ages = []
+
+    for data_point in player_data[player_iterator]['data_slam']:
+        this_age = data_point['age']
+        
+        if not this_age in ignore_ages:
+            occurrences = [item for item in player_data_slam if item['age'] == this_age]
+            my_object = {
+                "age": this_age,
+                "wins": occurrences[len(occurrences) - 1]['wins'],
+                "finals": occurrences[len(occurrences) - 1]['finals'],
+            }
+            print(my_object)
+            treated_data_slam.append(my_object)
+
+
+        ignore_ages.append(this_age)
+
+    player_data[player_iterator]['data_slam'] = treated_data_slam
 
 
 pprint(player_data)
