@@ -249,3 +249,6 @@ for player in info:
 
 
 pprint(player_data)
+
+with open('rawData.json', 'w') as outfile:
+    json.dump(player_data, outfile, indent=4)
