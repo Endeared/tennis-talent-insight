@@ -15,7 +15,7 @@ def plot_slams_by_year(data):
             x.append(int(data_point['year']))
             y.append(data_point['wins'])
 
-        if iterator <= 10:
+        if iterator <= 1:
             plt.plot(x, y, '--', label=player['name'])
         else:
             plt.plot(x, y, label=player['name'])
@@ -33,7 +33,7 @@ def plot_finals_by_year(data):
             x.append(int(data_point['year']))
             y.append(data_point['finals'])
 
-        if iterator <= 10:
+        if iterator <= 1:
             plt.plot(x, y, '--', label=player['name'])
         else:
             plt.plot(x, y, label=player['name'])
@@ -51,7 +51,7 @@ def plot_slams_by_age(data):
             x.append(int(data_point['age']))
             y.append(data_point['wins'])
 
-        if iterator <= 10:
+        if iterator <= 1:
             plt.plot(x, y, '--', label=player['name'])
         else:
             plt.plot(x, y, label=player['name'])
@@ -69,7 +69,7 @@ def plot_finals_by_age(data):
             x.append(int(data_point['age']))
             y.append(data_point['finals'])
 
-        if iterator <= 10:
+        if iterator <= 1:
             plt.plot(x, y, '--', label=player['name'])
         else:
             plt.plot(x, y, label=player['name'])
@@ -88,7 +88,7 @@ def plot_winloss_by_age(data):
             ratio = data_point['winLoss'][:-1]
             y.append(float(ratio))
 
-        if iterator <= 10:
+        if iterator <= 1:
             plt.plot(x, y, '--', label=player['name'])
         else:
             plt.plot(x, y, label=player['name'])
@@ -107,7 +107,7 @@ def plot_winloss_by_year(data):
             ratio = data_point['winLoss'][:-1]
             y.append(float(ratio))
 
-        if iterator <= 10:
+        if iterator <= 1:
             plt.plot(x, y, '--', label=player['name'])
         else:
             plt.plot(x, y, label=player['name'])
@@ -122,5 +122,6 @@ plot_slams_by_age(player_data)
 plot_finals_by_age(player_data)
 plot_winloss_by_year(player_data)
 plot_winloss_by_age(player_data)
+
 
 
