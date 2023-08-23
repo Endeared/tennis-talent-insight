@@ -11,5 +11,5 @@ Between two jobs / classes / helping "tutor" / managing my own personal projects
 Usually the standard is to put credits towards the end - but since at the end of the day a project like this is something I can only do with data provided by others (whether it be via webscraping, raw data, or an API), I feel it is a necessity to provide credit first where credit is due. All of the data that is graphed and used in this repo comes from the following:
 
 * **[Tennis Abstract](https://www.tennisabstract.com/)**
-* **[Raw Data from Tennis Abstract](https://github.com/JeffSackmann/tennis_atp)** - *Courtesy of **[JeffSackmann](https://github.com/JeffSackmann)**
+* **[Raw Data from Tennis Abstract](https://github.com/JeffSackmann/tennis_atp)** - *Courtesy of **[JeffSackmann](https://github.com/JeffSackmann)***
  
