@@ -13,3 +13,10 @@ Usually the standard is to put credits towards the end - but since at the end of
 * **[Tennis Abstract](https://www.tennisabstract.com/)**
 * **[Raw Data from Tennis Abstract](https://github.com/JeffSackmann/tennis_atp)** - *Courtesy of **[JeffSackmann](https://github.com/JeffSackmann)***
  
+## Included files / folders:
++ *main.py* => handles all of the logic for scraping various player pages / data on tennisabstract, super messy and will probably get around to cleaning this soon
+    > __Note__ third-party packages used: BeautifulSoup, requests-html
++ *sort_and_plot.py* => handles the raw data provided from main.py for each player, then handles plotting the data accordingly
+    > __Note__ third-party packages used: matplotlib
++ *rawData.json* => raw data provided by main.py, contains an array of players (objects) containing name, w/l% each year on tour, and grand slam data each year on tour
++ graphs => folder containing all of the graphs i plotted using sort_and_plot.py
