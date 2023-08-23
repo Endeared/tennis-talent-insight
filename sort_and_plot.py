@@ -2,7 +2,6 @@ import json
 import matplotlib.pyplot as plt
 
 fig, ax = plt.subplots(figsize=(10, 10))
-
 f = open('rawData.json')
 player_data = json.load(f)
 

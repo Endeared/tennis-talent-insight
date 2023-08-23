@@ -79,9 +79,6 @@ for player in info:
     }
     player_data.append(player_object)
 
-pprint(player_data)
-
-
 years = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
 base_url = "https://www.tennisabstract.com/cgi-bin/player.cgi?p="
@@ -133,175 +130,146 @@ def check_if_slam(tournament):
 player_iterator = 0
 
 for player in info:
-    # if player['name'] == "Rafael Nadal":
-        player_url = base_url + player['name'].replace(" ", "")
-        player_url_backup = backup_url + player['name'].replace(" ", "") + "&f=ACareerqqE0"
-        print(player_url)
-        page = session.get(player_url)
-        page.html.render(timeout=30)
+    player_url = base_url + player['name'].replace(" ", "")
+    player_url_backup = backup_url + player['name'].replace(" ", "") + "&f=ACareerqqE0"
+    page = session.get(player_url)
+    page.html.render(timeout=30)
 
-        year_by_year = []
+    year_by_year = []
 
-        tour_seasons = page.html.find('#tour-years')[0].find("tbody")[0].find("tr")
-        print(tour_seasons)
-        grand_slams = None
+    tour_seasons = page.html.find('#tour-years')[0].find("tbody")[0].find("tr")
+    grand_slams = None
+    try:
+        grand_slams = page.html.find('#titles-finals')[0].find("tbody")[0].find("tr")
+    except:
+        page_backup = session.get(player_url_backup)
+        page_backup.html.render(timeout=30)
+        grand_slams = page_backup.html.find('#matches')[0].find("tbody")[0].find("tr")
+
+
+    slam_wins = 0
+    slam_finals = 0
+
+    for season in reversed(tour_seasons):
+        tds = season.find("td")
+        year = tds[0].text
+        win_loss = tds[4].text
+        if not year == "Career":
+            age = age_from_two_years(int((player['dob'].split("-"))[2]), int(year))
+            my_object = {
+                "year": year,
+                "age": age,
+                "winLoss": win_loss
+            }
+            player_data[player_iterator]['data_wl'].append(my_object)
+
+    for slam in reversed(grand_slams):
+        tds = slam.find("td")
+        date = tds[0].text
+        tournament = tds[1].text
+        year = None
         try:
-            grand_slams = page.html.find('#titles-finals')[0].find("tbody")[0].find("tr")
+            year = date.split("-")[2]
         except:
-            page_backup = session.get(player_url_backup)
-            page_backup.html.render(timeout=30)
-            grand_slams = page_backup.html.find('#matches')[0].find("tbody")[0].find("tr")
+            year = date.split("‑")[2]
+        result = tds[6].text
+        last_name = player['name'].split(" ")[1]
+        index_of_last_name = result.find(last_name)
+        index_of_status = result.find("d.")
+        is_slam = check_if_slam(str(tournament))
 
+        if is_slam:
+            slam_finals += 1
+            if (index_of_last_name < index_of_status):
+                slam_wins += 1
 
-        slam_wins = 0
-        slam_finals = 0
+            age = get_age_at_date(player['dob'], date)
+            my_object = {
+                "year": year,
+                "age": age,
+                "wins": slam_wins,
+                "finals": slam_finals,
+            }
+            player_data[player_iterator]['data_slam'].append(my_object)
 
-        for season in reversed(tour_seasons):
-            tds = season.find("td")
-            year = tds[0].text
-            win_loss = tds[4].text
-            if not year == "Career":
-                age = age_from_two_years(int((player['dob'].split("-"))[2]), int(year))
+    player_data_slam = player_data[player_iterator]['data_slam']
+    player_data_wl = player_data[player_iterator]['data_wl']
+    length_wl = len(player_data_wl)
+    length_slam = len(player_data_slam)
+    lowest_age_wl = player_data_wl[0]['age']
+    highest_age_wl = player_data_wl[length_wl - 1]['age']
+    lowest_age_slam = player_data_slam[0]['age']
+    highest_age_slam = player_data_slam[length_slam - 1]['age']
+    all_ages = populate_range(int(lowest_age_wl), int(highest_age_wl) + 1)
+    player_birth_year = int((player['dob'].split("-"))[2])
+
+    for data_point in player_data[player_iterator]['data_slam']:
+        this_age = data_point['age']
+        if this_age in all_ages:
+            all_ages.remove(this_age)
+
+    pre_slams = []
+    post_slams = []
+    treated_data_slam = []
+    ignore_ages = []
+    most_recent_age = None
+    most_recent_wins = None
+    most_recent_finals = None
+    most_recent_year = None
+
+    for data_point in player_data_slam:
+        this_age = data_point['age']
+        this_year = data_point['year']
+        
+        if this_age not in ignore_ages:
+            if this_age not in all_ages:
+                occurrences = [item for item in player_data_slam if item['age'] == this_age]
                 my_object = {
-                    "year": year,
-                    "age": age,
-                    "winLoss": win_loss
+                    "age": this_age,
+                    "year": int(this_age) + player_birth_year,
+                    "wins": occurrences[len(occurrences) - 1]['wins'],
+                    "finals": occurrences[len(occurrences) - 1]['finals'],
                 }
-                player_data[player_iterator]['data_wl'].append(my_object)
-
-        for slam in reversed(grand_slams):
-            tds = slam.find("td")
-            date = tds[0].text
-            tournament = tds[1].text
-            year = None
-            try:
-                year = date.split("-")[2]
-            except:
-                year = date.split("‑")[2]
-            result = tds[6].text
-            last_name = player['name'].split(" ")[1]
-            index_of_last_name = result.find(last_name)
-            index_of_status = result.find("d.")
-            is_slam = check_if_slam(str(tournament))
-
-            if is_slam:
-                slam_finals += 1
-                if (index_of_last_name < index_of_status):
-                    slam_wins += 1
-
-                age = get_age_at_date(player['dob'], date)
+                most_recent_age = this_age
+                most_recent_wins = occurrences[len(occurrences) - 1]['wins']
+                most_recent_finals = occurrences[len(occurrences) - 1]['finals']
+                most_recent_year = this_year
+                treated_data_slam.append(my_object)
+            else:
                 my_object = {
-                    "year": year,
-                    "age": age,
-                    "wins": slam_wins,
-                    "finals": slam_finals,
-                }
-                player_data[player_iterator]['data_slam'].append(my_object)
-
-        player_data_slam = player_data[player_iterator]['data_slam']
-        player_data_wl = player_data[player_iterator]['data_wl']
-        length_wl = len(player_data_wl)
-        length_slam = len(player_data_slam)
-        lowest_age_wl = player_data_wl[0]['age']
-        highest_age_wl = player_data_wl[length_wl - 1]['age']
-        lowest_age_slam = player_data_slam[0]['age']
-        highest_age_slam = player_data_slam[length_slam - 1]['age']
-        all_ages = populate_range(int(lowest_age_wl), int(highest_age_wl) + 1)
-        player_birth_year = int((player['dob'].split("-"))[2])
-
-        for data_point in player_data[player_iterator]['data_slam']:
-            this_age = data_point['age']
-            if this_age in all_ages:
-                all_ages.remove(this_age)
-
-        pre_slams = []
-        post_slams = []
-
-        print(all_ages)
-
-        treated_data_slam = []
-        ignore_ages = []
-
-        pprint(player_data_slam)
-        most_recent_age = None
-        most_recent_wins = None
-        most_recent_finals = None
-        most_recent_year = None
-
-        for data_point in player_data_slam:
-            this_age = data_point['age']
-            this_year = data_point['year']
-            print(ignore_ages)
-            print(this_age)
-            
-            if this_age not in ignore_ages:
-                if this_age not in all_ages:
-                    occurrences = [item for item in player_data_slam if item['age'] == this_age]
-                    my_object = {
-                        "age": this_age,
-                        "year": int(this_age) + player_birth_year,
-                        "wins": occurrences[len(occurrences) - 1]['wins'],
-                        "finals": occurrences[len(occurrences) - 1]['finals'],
-                    }
-                    most_recent_age = this_age
-                    most_recent_wins = occurrences[len(occurrences) - 1]['wins']
-                    most_recent_finals = occurrences[len(occurrences) - 1]['finals']
-                    most_recent_year = this_year
-                    treated_data_slam.append(my_object)
-                else:
-                    my_object = {
-                        "age": this_age,
-                        "year": int(this_age) + player_birth_year,
-                        "wins": most_recent_wins,
-                        "finals": most_recent_finals,
-                    }
-                    treated_data_slam.append(my_object)
-            ignore_ages.append(this_age)
-
-        for age in all_ages:
-            if int(age) < int(lowest_age_slam):
-                my_object = {
-                    "age": age,
-                    "year": int(age) + player_birth_year,
-                    "wins": 0,
-                    "finals": 0,
-                }
-                pre_slams.append(my_object) 
-            elif int(age) > int(highest_age_slam):
-                my_object = {
-                    "age": age,
-                    "year": int(age) + player_birth_year,
+                    "age": this_age,
+                    "year": int(this_age) + player_birth_year,
                     "wins": most_recent_wins,
                     "finals": most_recent_finals,
                 }
-                post_slams.append(my_object)
-        
-        for year_pre in reversed(pre_slams):
-            treated_data_slam.insert(0, year_pre)
-        for year_post in post_slams:
-            treated_data_slam.append(year_post)
+                treated_data_slam.append(my_object)
+        ignore_ages.append(this_age)
 
-        print(all_ages)
-        # this_index = 0
-        # for data_point in player_data[player_iterator]['data_slam']:
-        #     this_age = data_point['age']
-        #     next_age = str(int(this_age) + 1)
+    for age in all_ages:
+        if int(age) < int(lowest_age_slam):
+            my_object = {
+                "age": age,
+                "year": int(age) + player_birth_year,
+                "wins": 0,
+                "finals": 0,
+            }
+            pre_slams.append(my_object) 
+        elif int(age) > int(highest_age_slam):
+            my_object = {
+                "age": age,
+                "year": int(age) + player_birth_year,
+                "wins": most_recent_wins,
+                "finals": most_recent_finals,
+            }
+            post_slams.append(my_object)
+    
+    for year_pre in reversed(pre_slams):
+        treated_data_slam.insert(0, year_pre)
+    for year_post in post_slams:
+        treated_data_slam.append(year_post)
 
-        #     if next_age in all_ages:
-        #         my_object = {
-        #             "age": next_age,
-        #             "wins": data_point['wins'],
-        #             "finals": data_point['finals'],
-        #         }
-        #         treated_data_slam.insert(this_index, my_object)
-        #         this_index += 1
-        #     this_index += 1
-
-        player_data[player_iterator]['data_slam'] = treated_data_slam
-        player_iterator += 1
-
-
-pprint(player_data)
+    player_data[player_iterator]['data_slam'] = treated_data_slam
+    player_iterator += 1
 
 with open('rawData.json', 'w') as outfile:
     json.dump(player_data, outfile, indent=4)
